@@ -61,6 +61,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="aY2-Bm-M97">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="240" y="174" width="80" height="80"/>
+                                </variation>
+                            </imageView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REn-8H-bBa">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -70,12 +76,15 @@
                                     <rect key="frame" x="16" y="72" width="304" height="75"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="aY2-Bm-M97">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxt-Uq-hQg">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="240" y="174" width="80" height="80"/>
+                                    <rect key="frame" x="16" y="174" width="216" height="42"/>
                                 </variation>
-                            </imageView>
+                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OY2-72-D36">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -110,8 +119,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="REn-8H-bBa"/>
                                 <exclude reference="aY2-Bm-M97"/>
+                                <exclude reference="REn-8H-bBa"/>
+                                <exclude reference="nxt-Uq-hQg"/>
                                 <exclude reference="OY2-72-D36"/>
                                 <exclude reference="cdC-64-CtH"/>
                                 <exclude reference="i8K-Ml-84W"/>
@@ -119,8 +129,9 @@
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="REn-8H-bBa"/>
                                 <include reference="aY2-Bm-M97"/>
+                                <include reference="REn-8H-bBa"/>
+                                <include reference="nxt-Uq-hQg"/>
                                 <include reference="OY2-72-D36"/>
                                 <include reference="cdC-64-CtH"/>
                                 <include reference="i8K-Ml-84W"/>
@@ -132,6 +143,7 @@
                         <outlet property="enterNameTextField" destination="OY2-72-D36" id="ycE-cR-j68"/>
                         <outlet property="mailButton" destination="i8K-Ml-84W" id="saG-8C-BYj"/>
                         <outlet property="messageLabel" destination="REn-8H-bBa" id="5sp-1t-1jl"/>
+                        <outlet property="nameLabel" destination="nxt-Uq-hQg" id="c9r-x5-4ck"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
